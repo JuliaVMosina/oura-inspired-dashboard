@@ -1,0 +1,14 @@
+# Internal project planning — not for public repo
+PROJECT_PLAN.md
+
+# Power BI files (large binaries — add selectively)
+*.pbix
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# OS
+.DS_Store
+Thumbs.db
