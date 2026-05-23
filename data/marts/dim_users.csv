@@ -1,0 +1,16 @@
+user_id,segment,age,gender,device_model,membership_start,step_goal,sleep_goal_hours
+1,Self-Optimizer,28,male,Oura Ring 4,2025-10-12,10000,8.2
+2,Self-Optimizer,35,male,Oura Ring 3,2025-09-23,10000,8.3
+3,Self-Optimizer,29,female,Oura Ring 3,2025-02-13,10000,8.2
+4,Self-Optimizer,33,female,Oura Ring 3,2024-10-20,10000,7.9
+5,Self-Optimizer,27,male,Oura Ring 3,2024-02-23,10000,7.4
+6,Self-Optimizer,32,male,Oura Ring 4,2024-07-05,10000,8.1
+7,Health Coach,22,female,Oura Ring 4,2025-08-09,10000,8.3
+8,Health Coach,24,female,Oura Ring 3,2025-10-23,10000,8.0
+9,Health Coach,23,male,Oura Ring 4,2025-07-01,10000,7.9
+10,Health Coach,22,non-binary,Oura Ring 4 Horizon,2024-07-06,10000,8.1
+11,Casual User,38,male,Oura Ring 4,2025-08-14,10000,7.9
+12,Casual User,24,female,Oura Ring 4 Horizon,2024-10-18,10000,7.5
+13,Casual User,35,female,Oura Ring 4 Horizon,2025-06-20,10000,7.5
+14,Casual User,32,female,Oura Ring 4,2025-11-19,10000,7.9
+15,Casual User,37,male,Oura Ring 4 Horizon,2025-11-21,10000,8.3

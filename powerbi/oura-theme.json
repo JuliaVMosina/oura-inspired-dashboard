@@ -1,0 +1,183 @@
+{
+  "name": "Oura Health Intelligence",
+  "dataColors": [
+    "#C8963E",
+    "#E8A838",
+    "#4CAF50",
+    "#4A6FA5",
+    "#A855C8",
+    "#FF9800",
+    "#F44336",
+    "#B0B8C1"
+  ],
+  "background": "#1A1A2E",
+  "foreground": "#FFFFFF",
+  "tableAccent": "#C8963E",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "border": [{ "color": { "solid": { "color": "#2A3550" } } }],
+        "fontFamily": [{ "fontFamily": "Segoe UI" }]
+      }
+    },
+    "card": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "labels": [{
+          "color": { "solid": { "color": "#B0B8C1" } },
+          "fontSize": 11,
+          "fontFamily": "Segoe UI"
+        }],
+        "categoryLabels": [{
+          "color": { "solid": { "color": "#B0B8C1" } },
+          "fontSize": 11
+        }],
+        "calloutValue": [{
+          "color": { "solid": { "color": "#FFFFFF" } },
+          "fontSize": 36,
+          "fontFamily": "Segoe UI",
+          "fontWeight": "bold"
+        }]
+      }
+    },
+    "barChart": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "dataAxis": [{
+          "gridlineColor": { "solid": { "color": "#2A3550" } },
+          "labelColor": { "solid": { "color": "#B0B8C1" } },
+          "titleColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "categoryAxis": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } },
+          "titleColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "legend": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }]
+      }
+    },
+    "lineChart": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "valueAxis": [{
+          "gridlineColor": { "solid": { "color": "#2A3550" } },
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "categoryAxis": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "legend": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }]
+      }
+    },
+    "clusteredBarChart": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "dataAxis": [{
+          "gridlineColor": { "solid": { "color": "#2A3550" } },
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "categoryAxis": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "legend": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }]
+      }
+    },
+    "columnChart": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "valueAxis": [{
+          "gridlineColor": { "solid": { "color": "#2A3550" } },
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "categoryAxis": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "legend": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }]
+      }
+    },
+    "scatterChart": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "xAxis": [{
+          "gridlineColor": { "solid": { "color": "#2A3550" } },
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "yAxis": [{
+          "gridlineColor": { "solid": { "color": "#2A3550" } },
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }],
+        "legend": [{
+          "labelColor": { "solid": { "color": "#B0B8C1" } }
+        }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "data": [{
+          "fontColor": { "solid": { "color": "#B0B8C1" } },
+          "outlineColor": { "solid": { "color": "#2A3550" } }
+        }],
+        "header": [{
+          "fontColor": { "solid": { "color": "#B0B8C1" } },
+          "background": { "solid": { "color": "#16213E" } },
+          "outline": "None"
+        }]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#16213E" } } }],
+        "header": [{
+          "fontColor": { "solid": { "color": "#B0B8C1" } },
+          "backColor": { "solid": { "color": "#1A2744" } }
+        }],
+        "rows": [{
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "backColor": { "solid": { "color": "#16213E" } },
+          "altFontColor": { "solid": { "color": "#FFFFFF" } },
+          "altBackColor": { "solid": { "color": "#1E2A4A" } }
+        }]
+      }
+    }
+  },
+  "page": {
+    "background": { "color": "#1A1A2E", "transparency": 0 },
+    "outspace": { "color": "#1A1A2E", "transparency": 0 }
+  },
+  "textClasses": {
+    "label": {
+      "color": "#B0B8C1",
+      "fontFace": "Segoe UI",
+      "fontSize": 11
+    },
+    "callout": {
+      "color": "#FFFFFF",
+      "fontFace": "Segoe UI",
+      "fontSize": 36
+    },
+    "title": {
+      "color": "#FFFFFF",
+      "fontFace": "Segoe UI",
+      "fontSize": 18
+    },
+    "header": {
+      "color": "#FFFFFF",
+      "fontFace": "Segoe UI",
+      "fontSize": 14
+    },
+    "largeTitle": {
+      "color": "#C8963E",
+      "fontFace": "Segoe UI",
+      "fontSize": 24
+    }
+  }
+}
