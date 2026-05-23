@@ -63,12 +63,13 @@ Everything else is supporting context — visually smaller, lower contrast.
 **Hierarchy chosen:**
 1. Four KPI cards (score, avg duration, deep sleep, REM) — today's key numbers
 2. 30-day duration bar chart — primary trend view, hero visual
-3. Stage donut — part-of-whole breakdown (supporting)
+3. Sleep Stages horizontal bar chart — part-of-whole breakdown (supporting); donut rejected, see below
 4. Sleep timing scatter + score distribution — diagnostic tools (tertiary)
 
 **Rejected alternatives:**
 - *Area chart for sleep duration* — rejected in favour of bars. Bar height is easier to compare night-to-night than area. Goal line on a bar chart is cleaner.
 - *Stacked bar for sleep stages over time* — rejected. Stacked bars make it hard to read individual stage trends. Donut for average breakdown + separate trend if needed.
+- *Donut chart for sleep stages* — rejected during wireframing in favour of a horizontal bar chart. The four segments (Deep 22% / REM 25% / Light 46% / Awake 7%) are primarily compared against each other — a bar chart gives more accurate magnitude perception than arc length on a donut. Accepted as a deliberate deviation from the initial spec. Stage colours: Deep = `#C8963E` (gold), REM = `#A855C8` (purple — amber `#E8A838` was too close to gold to be distinguishable at bar width; purple is the industry standard for REM in sleep analytics used by Oura and Fitbit), Light = `#4A6FA5` (blue), Awake = `#F44336` (red).
 - *Heatmap calendar for sleep scores* — considered, not implemented in v1. Would require Deneb and adds complexity without answering the primary question faster.
 
 ---
