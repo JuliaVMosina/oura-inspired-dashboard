@@ -1,0 +1,7 @@
+oura_dashboard:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../data/oura.duckdb"
+      threads: 4

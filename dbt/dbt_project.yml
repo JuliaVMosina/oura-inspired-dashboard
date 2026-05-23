@@ -1,0 +1,25 @@
+name: oura_dashboard
+version: "1.0.0"
+config-version: 2
+
+profile: oura_dashboard
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  data_raw_path: "C:/Users/Julia/Documents/oura-inspired-dashboard/data/raw"
+
+models:
+  oura_dashboard:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: view
+      +schema: intermediate
+    marts:
+      +materialized: table
+      +schema: marts

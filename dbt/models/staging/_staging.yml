@@ -1,0 +1,130 @@
+version: 2
+
+models:
+  - name: stg_users
+    description: "User profiles. One row per user."
+    columns:
+      - name: user_id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+      - name: segment
+        description: "User persona segment"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["Self-Optimizer", "Health Coach", "Casual User"]
+
+  - name: stg_daily_scores
+    description: "Daily readiness, sleep and activity scores. One row per user per day."
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_users')
+              field: user_id
+      - name: score_date
+        tests:
+          - not_null
+      - name: readiness_score
+        description: "0–100. Composite of HRV, sleep, activity recovery."
+        tests:
+          - not_null
+      - name: sleep_score
+        tests:
+          - not_null
+      - name: activity_score
+        tests:
+          - not_null
+      - name: readiness_category
+        tests:
+          - accepted_values:
+              values: ["Good", "Medium", "Low"]
+
+  - name: stg_sleep_sessions
+    description: "One sleep session per user per night."
+    columns:
+      - name: session_id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_users')
+              field: user_id
+      - name: duration_h
+        description: "Total sleep duration in hours"
+        tests:
+          - not_null
+      - name: sleep_score
+        tests:
+          - not_null
+
+  - name: stg_activity_sessions
+    description: "Daily activity per user. One row per user per day."
+    columns:
+      - name: activity_id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_users')
+              field: user_id
+      - name: steps
+        description: "Total daily step count"
+        tests:
+          - not_null
+
+  - name: stg_hrv_metrics
+    description: "Daily physiological signals. One row per user per day."
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_users')
+              field: user_id
+      - name: metric_date
+        tests:
+          - not_null
+      - name: hrv_ms
+        description: "HRV in milliseconds"
+        tests:
+          - not_null
+      - name: resting_hr_bpm
+        tests:
+          - not_null
+
+  - name: stg_app_engagement
+    description: "One row per feature view per session."
+    columns:
+      - name: engagement_id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_users')
+              field: user_id
+      - name: feature_viewed
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - "Readiness Score"
+                - "Sleep Score"
+                - "Activity Ring"
+                - "HRV Chart"
+                - "Sleep Stages"
+                - "Trends"
+                - "Goals"
+                - "Notifications"

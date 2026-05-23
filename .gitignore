@@ -4,6 +4,12 @@ PROJECT_PLAN.md
 # Power BI files (large binaries — add selectively)
 *.pbix
 
+# DBT
+dbt/target/
+dbt/logs/
+dbt/*.duckdb
+data/oura.duckdb
+
 # Python
 __pycache__/
 *.pyc
